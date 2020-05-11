@@ -44,7 +44,7 @@
 \lhead{\includegraphics[height=1in,clip]{logo}}
 \rhead{\pbox[b][1in][c]{\textwidth}{
     \small
-    \textbf{Test Performed By}\\
+    \textbf{Isinagawa ang pagsusuri ng sumusunod na laboratoryo:}\\
     Northwest Genomics Center\\
     University of Washington School of Medicine\\
     Genome Sciences Box 355065\\
@@ -65,171 +65,190 @@
 \bigskip
 
 \begin{description}[font=\normalfont,align=left,labelwidth=12em]
-\item [Participant Name] \textbf{\VAR{pat_name|e}}
-\item [Participant Date of Birth] \textbf{\VAR{birth_date|e}}
-\item [Specimen Identifier] \textbf{\VAR{qrcode|e}}
-\item [Date Sample Submitted] \textbf{\VAR{collect_ts|e}}
-\item [Date Results Provided]
+\item [Pangalan ng Kalahok] \textbf{\VAR{pat_name|e}}
+\item [Petsa ng Kapanganakan] \textbf{\VAR{birth_date|e}}
+\item [Pagkakakilanlan ng ispesimen] \textbf{\VAR{qrcode|e}}
+\item [Petsa ng Pagsusumite sa Sampol] \textbf{\VAR{collect_ts|e}}
+\item [Petsa ng pagbibigay sa mga resulta]
   %- if status_code == "never-tested"
-  \textbf{Never tested}
+  \textbf{Hindi pa nasubukan}
   %- else
   \textbf{\VAR{result_ts|e}}
   %- endif
-\item [Specimen Type] Midnasal, self-collected
+\item [Uri ng Ispesimen] Midnasal, kinolekta nang mag-isa
 \end{description}
 
 \PageLine
 
-Result of SARS-CoV-2 (COVID-19) Qual PCR
+Mga Resulta ng SARS-CoV-2 (COVID-19) Qual PCR
 
 %- if status_code == "negative"
-\textbf{Not detected}\\
+\textbf{Hindi natukoy}\\
 %- elif status_code == "positive"
-\textbf{SARS-CoV-2 Detected (positive)}\\
+\textbf{Natukoy ang SARS-CoV-2 (positibo)}\\
 %- elif status_code == "inconclusive"
-\textbf{Inconclusive}\\
+\textbf{Hindi kongklusibo}\\
 %- elif status_code == "never-tested"
-\textbf{Unable to be tested}\\
+\textbf{Hindi nasuri}\\
 %- else
 \VAR{0/0} %# poor man's raise
 %- endif
 
 \PageLine
 
-Please Note:
+Pakitandaan:
 
 \begin{itemize}
 \item
 
-  \textbf{The type of sample and testing used in this project is
-  conducted as part of a public health surveillance program in
-  partnership with King County and other agencies.} The testing you have
-  received is not a substitute for receiving personal medical care by a
-  healthcare provider.
+  \textbf{Ang uri ng sampol at pagsusuri na ginamit sa proyektong ito ay
+  isinasagawa bilang bahagi ng programa ng pagsubaybay sa kalusugan ng publiko
+  sa pakikipagtulungan sa King County at iba pang ahensya.} Ang pagsusuring
+  natanggap ninyo ay hindi kapalit sa pagtanggap ng personal na medikal na
+  pangangalaga mula sa isang tagapagbigay ng pangangalagang pangkalusugan.
 
 \item
 
-  \textbf{Specimen Chain of Custody:} The specimen tested was
-  self-collected, self-labeled, and submitted to SCAN by mail or
-  delivery service. It was not collected, labeled, and transported by a
-  licensed healthcare professional. This may impact test results and
-  false negative results cannot be excluded. Follow-up clinical testing
-  may be warranted.
+  \textbf{Pagkakasunud-sunod ng Pag-iingat sa Ispesimen:} ang nasuring ispesimen
+  ay kinolekta nang mag-isa, nilagyan ng label nang mag-isa, at isinumite sa
+  SCAN (Seattle Coronavirus Assessment Network o Network ng Seattle sa Pagsusuri
+  ng Koronabayrus) sa pamamagitan ng koreo o serbisyo sa paghahatid. Hindi ito
+  kinolekta, nilagyan ng label, at ibiniyahe ng isang lisensyadong propesyonal
+  sa pangangalagang pangkalusugan. Maaari itong makaapekto sa mga resulta ng
+  pagsusuri, at maaaring hindi maibukod ang mga maling negatibong resulta.
+  Maaaring kailanganin ng follow-up na klinikal na pagsusuri.
 
 \item
 
-  \textbf{Specimen collection device:} The mid-turbinate swab is not an
-  FDA/CDC Emergency Use Authorization (EUA) approved specimen type.
-  Therefore, not detected/negative results may not exclude SARS-CoV-2
-  infection.
+  \textbf{Aparato sa pangongolekta ng ispesimen:} ang mid turbinate suwab ay
+  hindi isang uri ng ispesimen na naaprubahan ng FDA (Food and Drug
+  Administration o Administrasyon sa Pagkain at Gamot)/CDC (Centers for Disease
+  Control and Prevention o Mga Sentro sa Pagkontrol at Pag-iwas sa Sakit) EUA
+  (Emergency Use Authorization o Awtorisasyon sa Emerhensiyang Paggamit). Kaya
+  maaaring hindi maibukod ng mga resultang hindi natukoy/negatibo ang impeksyong
+  dulot ng SARS-CoV-2.
 
 \item
 
-  \textbf{``Positive'' results may be verified by the Washington State
-  Department of Health}. This result should be discussed with your
-  healthcare provider if you have questions.
+  \textbf{Maaaring kumpirmahin ng Kagawaran ng Kalusugan ng Estado ng Washington
+  ang mga ``positibong'' resulta.} Dapat talakayin ang resultang ito sa inyong
+  tagapagbigay ng pangangalagang pangkalusugan kung mayroon kayong mga tanong.
 
 \item{
-  \textbf{If your test says ``Not detected'' it means that SARS-CoV-2
-    was not detected in our laboratory.}
+  \textbf{Kung ``Hindi natukoy'' ang nakasaad sa inyong pagsusuri, ibig sabihin,
+  hindi natukoy ang SARS-CoV-2 sa aming laboratoryo.}
 
-  No test is perfect and there is a small chance that you do have the
-  SARS-CoV-2 virus that causes COVID-19 with a negative test. This test
-  does not use the standard way of collecting specimens by a health care
-  provider, and the sample was sent by mail or delivery service, not collected and transported
-  in a healthcare setting. Regardless of your test result, it's best to
-  stay home when you feel sick, and avoid contact with other people. If
-  you have other health problems or are very sick or are worried about
-  your illness, you should contact your healthcare provider. If your
-  symptoms persist, you should discuss getting another test for COVID-19
-  with your health care provider.
+  Walang perpektong pagsusuri at may maliit na posibilidad na negatibo ang
+  maging resulta ng inyong pagsusuri kahit mayroon kayong SARS-CoV- 2 bayrus na
+  nagdudulot ng COVID-19. Hindi ginagamit ng pagsusuring ito ang pamantayang
+  paraan ng pangongolekta ng mga ispesimen ng isang tagapagbigay ng
+  pangangalagang pangkalusugan, at ang sampol ay ipinadala sa pamamagitan ng
+  koreo o serbisyo sa paghahatid, at hindi kinolekta at ibiniyahe sa isang lugar
+  para sa pangangalagang pangkalusugan. Anuman ang maging resulta ng inyong
+  pagsusuri, mainam na manatili kayo sa bahay kung masama ang inyong pakiramdam,
+  at iwasan ninyong lumapit sa ibang tao. Kung kayo ay may iba pang problema sa
+  kalusugan o may malalang sakit o nababahala tungkol sa inyong karamdaman,
+  dapat kayong makipag-ugnayan sa inyong tagapagbigay ng pangangalagang
+  pangkalusugan. Kung hindi mawawala ang inyong mga sintomas, dapat ninyong
+  talakayin sa inyong tagapagbigay ng pangangalagang pangkalusugan ang tungkol
+  sa pagkuha ng isa pang pagsusuri para sa COVID-19.
 }
 
 \item
 
-  \textbf{If your test says ``Inconclusive''} it means that our
-  laboratory test results for the SARS-CoV-2 target are not certain.
+  \textbf{Kung ``Hindi kongklusibo" ang inyong pagsusuri,} big sabihin, hind
+  tiyak ang mga resulta ng aming pagsusuri sa laboratoryo para sa target na
+  SARS-CoV-2.
 
-  No test is perfect and there is a chance that an inconclusive result
-  could mean that you do have the SARS-CoV-2 virus that causes COVID-19.
-  This test does not use the standard way of collecting specimens by a
-  health care provider, and the sample was sent by mail or delivery service, not collected and
-  transported in a healthcare setting. Regardless of your test result,
-  it's best to stay home when you feel sick, and avoid contact with other
-  people. If you have other health problems or are very sick or are
-  worried about your illness, you should contact your healthcare provider.
-  If your symptoms persist, you should discuss getting another test for
-  COVID-19 with your health care provider.
-
-\item
-
-  \textbf{If your test says ``Unable to be tested''} it means that there
-  was either not enough of the specimen or there was an error in the
-  test process.
-
-  Since testing was unable to be performed, there is a chance that you do
-  have the SARS-CoV-2 virus that causes COVID-19. This test does not use
-  the standard way of collecting specimens by a health care provider, and
-  the sample was sent by mail or delivery service, not collected and transported in a
-  healthcare setting. Regardless of your test result, it's best to stay
-  home when you feel sick, and avoid contact with other people. If you
-  have other health problems or are very sick or are worried about your
-  illness, you should contact your healthcare provider. If your symptoms
-  persist, you should discuss getting another test for COVID-19 with your
-  health care provider.
+  Walang perpektong pagsusuri at may maliit na posibilidad na hindi kongklusibo
+  ang inyong resulta at mayroon kayong SARS-CoV-2 bayrus na nagdudulot ng
+  COVID-19. Hindi ginagamit ng pagsusuring ito ang pamantayang paraan ng
+  pangongolekta ng mga ispesimen ng isang tagapagbigay ng pangangalagang
+  pangkalusugan, at ang sampol ay ipinadala sa pamamagitan ng koreo o serbisyo
+  sa paghahatid, at hindi kinolekta at ibiniyahe sa isang lugar para sa
+  pangangalagang pangkalusugan. Anuman ang maging resulta ng inyong pagsusuri,
+  mainam na manatili kayo sa bahay kung masama ang inyong pakiramdam, at iwasan
+  ninyong lumapit sa ibang tao. Kung kayo ay may iba pang problema sa kalusugan
+  o may malalang sakit o nababahala tungkol sa inyong karamdaman, dapat kayong
+  makipag-ugnayan sa inyong tagapagbigay ng pangangalagang pangkalusugan. Kung
+  hindi mawawala ang inyong mga sintomas, dapat ninyong talakayin sa inyong
+  tagapagbigay ng pangangalagang pangkalusugan ang tungkol sa pagkuha ng isa
+  pang pagsusuri para sa COVID-19.
 
 \item
 
-  \textbf{Positive tests (shown as ``DETECTED'' or ``Virus Detected'')
-  will be reported to the appropriate state and county Health Department
-  by the testing facility.} You DO NOT need to report these results
-  yourself. Public Health may follow up with you if your test is
-  positive for novel coronavirus to ask you about your illness and
-  people you may have come in contact with.
+  \textbf{Kung ``Hindi nasuri" ang nakasaad sa inyong pagsusuri,} ibig sabihin,
+  walang sapat na ispesimen o nagkaroon ng pagkakamali sa proseso ng pagsusuri.
+
+  Dahil hindi naisagawa ang pagsusuri, may posibilidad na mayroon kayong
+  SARS-CoV-2 bayrus na nagdudulot ng COVID-19.  Hindi ginagamit ng pagsusuring
+  ito ang pamantayang paraan ng pangongolekta ng mga ispesimen ng isang
+  tagapagbigay ng pangangalagang pangkalusugan, at ang sampol ay ipinadala sa
+  pamamagitan ng koreo o serbisyo sa paghahatid, at hindi kinolekta at ibiniyahe
+  sa isang lugar para sa pangangalagang pangkalusugan.  Anuman ang maging
+  resulta ng inyong pagsusuri, mainam na manatili kayo sa bahay kung masama ang
+  inyong pakiramdam, at iwasan ninyong lumapit sa ibang tao. Kung kayo ay may
+  iba pang problema sa kalusugan o may malalang sakit o nababahala tungkol sa
+  inyong karamdaman, dapat kayong makipag-ugnayan sa inyong tagapagbigay ng
+  pangangalagang pangkalusugan.  Kung hindi mawawala ang inyong mga sintomas,
+  dapat ninyong talakayin sa inyong tagapagbigay ng pangangalagang pangkalusugan
+  ang tungkol sa pagkuha ng isa pang pagsusuri para sa COVID-19.
 
 \item
 
-  \textbf{You can print out or email these test results to your health
-  care provider.}
+  \textbf{Iuulat ng pasilidad ng pagsusuri ang mga positibong pagsusuri (na
+  ipinapakita bilang “NATUKOY” o “Natukoy ang Bayrus”) sa naaangkop na Kagawaran
+  ng Kalusugan ng estado at county.} HINDI kailangang kayo mismo ang mag-ulat sa
+  mga resultang ito.  Maaaring mag-follow up sa inyo ang Kalusugan ng Publiko
+  kung positibo ang inyong pagsusuri para sa bagong koronabayrus upang tanungin
+  kayo tungkol sa inyong karamdaman at sa mga taong maaaring nakaugnayan ninyo.
+
+\item
+
+  \textbf{Maaari ninyong i-printa o i-email ang mga resultang ito ng pagsusuri
+  sa inyong tagapagbigay ng pangangalagang pangkalusugan.}
 
 \end{itemize}
 
 \bigskip
-\textbf{Methodology of SARS-CoV-2 (COVID-19) Qual PCR:}
+\textbf{Pamamaraan ng SARS-CoV-2 (COVID-19) Qual PCR:}
 
-This assay is designed to detect SARS-CoV-2 using reverse-transcription
-PCR.  This assay relies on amplification of the viral genome segments
-Orf1B and S with an internal human RNaseP amplification control.  This
-test was developed and its performance characteristics determined by the
-University of Washington's Northwest Genomics Center.  This laboratory
-developed test is validated and has been submitted to the US Food and
-Drug Administration for Emergency Use Authorization. The FDA's
-independent review of the test validation is pending. This laboratory is
-certified under the Clinical Laboratory Improvement Amendments (CLIA) as
-qualified to perform high complexity clinical laboratory testing.
+Idinisenyo ang pagsusuri na ito upang matukoy ang SARS-CoV-2 gamit ang
+tiwaliing-transkripsyon PCR. Itong pagsusuri ay nakasalalay sa pagpapalakas ng
+mga segmentong viral genome na Orf1B at S na may panloob pantaong RnaseP kontrol
+ng pagpapalakas. Ang pagsusuri na ito ay binuo at ang mga katangian ng pagganap
+nito ay tinukoy ng Northwest Genomics Center ng Universidad ng Washington. Ang
+pagsusuri na binuo sa laboratoryo ay napatunayan at isinumite sa Administrasyon
+ng Pagkain at Gamot (FDA) ng Estados Unidos para sa Awtorisasyon sa
+Emerhensiyang Paggamit. Nakabinbin pa ang hiwalay na pagsusuri ng FDA para sa
+pagpapatunay ng pagsusuri. Sertipikado ang laboratoryong ito sa ilalim ng Mga
+Pagbabago sa Pagpapabuti sa Klinikal na Laboratoryo/Clinical Laboratory
+Improvement Amendments (CLIA) na kwalipikadong magsagawa ng mga
+napakakumplikadong klinikal na pagsusuri sa laboratoryo.
 
-For further provider information, please see these links provided by the
-Washington State Department of Health:
+Para sa higit pang impormasyon tungkol sa tagapagbigay, pakitingnan ang mga link
+na ito sa ibaba na ibinigay ng Kagawaran ng Kalusugan ng Estado ng Washington:
 
 \begin{itemize}
 \item
 
-  \link{https://www.doh.wa.gov/Portals/1/Documents/1600/coronavirus/COVIDcasepositive.pdf}{Patients with confirmed or suspected COVID-19}
+  \link{https://www.doh.wa.gov/Portals/1/Documents/1600/coronavirus/COVIDcasepositive.pdf}{Mga
+  pasyenteng nakumpirma o pinaghihinalaang may COVID-19}
 
 \item
 
-  \link{https://www.doh.wa.gov/Portals/1/Documents/1600/coronavirus/COVIDexposed.pdf}{Patients
-  who were exposed to a confirmed COVID-19 case}
+  \link{https://www.doh.wa.gov/Portals/1/Documents/1600/coronavirus/COVIDexposed.pdf}{Mga
+  pasyenteng nalantad sa isang kumpirmadong kaso ng COVID-19}
 
 \item
 
-  \link{https://www.doh.wa.gov/Portals/1/Documents/1600/coronavirus/COVIDconcerned.pdf}{Unexposed
-  patients with COVID-19 symptoms}
+  \link{https://www.doh.wa.gov/Portals/1/Documents/1600/coronavirus/COVIDconcerned.pdf}{Mga
+  hindi nalantad na pasyenteng may mga sintomas ng COVID-19}
 
 \end{itemize}
 
-Additional resources are available at the Washington State Department of Health
-and CDC websites:
+Makakakita ng mga karagdagang mapagkukunan sa Kagawaran ng Kalusugan ng Estado
+ng Washington at sa mga website ng CDC:
 
 \begin{itemize}
 \item
@@ -238,7 +257,7 @@ and CDC websites:
 
 \item
 
-  \url{https://www.cdc.gov/coronavirus/2019-ncov/index.html}
+  \url{https://wwwn.cdc.gov/pubs/other-languages?Sort=Lang%3A%3Aasc&Language=Tagalog}
 
 \end{itemize}
 
