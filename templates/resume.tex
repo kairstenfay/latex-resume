@@ -17,6 +17,7 @@
 \usepackage{multirow}
 \usepackage{pbox}
 \usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
 
 % fonts
 \usepackage{fontspec}
@@ -28,7 +29,7 @@
   Extension   = .ttf,
   UprightFont = * ]
 
-\hypersetup{colorlinks,urlcolor=magenta}
+\hypersetup{colorlinks,urlcolor=CornflowerBlue}
 \urlstyle{same}
 
 % page layout
@@ -47,15 +48,15 @@
     \textbf{\VAR{name|e}}\\
     \large
     \VAR{title|e}\\
-    \href{mailto:\VAR{email|e}}{\VAR{email|e}}\\
+    \textbf{\href{mailto:\VAR{email|e}}{\VAR{email|e}}}\\
     \VAR{location|e}}
 }
 
 \rhead{\pbox[b][1in][c]{\textwidth}{
-    \textbf{GitHub}: \href{http://\VAR{github|e}}{\VAR{github|e}}\\
-    \textbf{Portfolio}: \href{http://\VAR{portfolio|e}}{\VAR{portfolio|e}}\\
-    \textbf{LinkedIn}: \href{http://\VAR{linkedin|e}}{\VAR{linkedin|e}}\\
-    \textbf{Google Scholar}: \href{http://\VAR{google_scholar|e}}{\VAR{google_scholar|e}}}
+    \textbf{GitHub}: \textbf{\href{http://\VAR{github|e}}{\VAR{github|e}}}\\
+    \textbf{Portfolio}: \textbf{\href{http://\VAR{portfolio|e}}{\VAR{portfolio|e}}}\\
+    \textbf{LinkedIn}: \textbf{\href{http://\VAR{linkedin|e}}{\VAR{linkedin|e}}}\\
+    \textbf{Google Scholar}: \textbf{\href{http://\VAR{google_scholar|e}}{\VAR{google_scholar|e}}}}
 }
 
 
@@ -71,8 +72,8 @@
 \begin{description}[font=\normalfont,align=left,labelwidth=\textwidth - \widthofpbox{\VAR{job_1_duration|e}}]
   \item [\Large \VAR{job_1_company_name|e}, \VAR{job_1_location|e}] \VAR{job_1_duration|e}
 \end{description}
-\begin{description}[font=\normalfont,align=left,labelwidth=\textwidth - \widthofpbox{\VAR{job_1_link_1|e} | \VAR{job_1_link_2|e}}]
-  \item [\VAR{job_1_title|e}] \href{http://\VAR{job_1_link_1|e}}{\VAR{job_1_link_1|e}} | \href{http://\VAR{job_1_link_2|e}}{\VAR{job_1_link_2|e}}
+\begin{description}[font=\normalfont,align=left,labelwidth=\textwidth - \widthofpbox{\textbf{\VAR{job_1_link_1|e}} | \textbf{\VAR{job_1_link_2|e}}}]
+  \item [\VAR{job_1_title|e}] \textbf{\href{http://\VAR{job_1_link_1|e}}{\VAR{job_1_link_1|e}}} | \textbf{\href{http://\VAR{job_1_link_2|e}}{\VAR{job_1_link_2|e}}}
 \end{description}
 \begin{itemize}
 
